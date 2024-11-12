@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>Inserisci il voto</h1>
+    <form action="script.php" method="post">
+        <label for="data">data:</label>
+        <input type="date" name="data" id="data" required>
+        <label for="voto">voto recensione:</label>
+        <input type="number" id="voto" name="voto" min="1" max="5" required>
+        <br>
+        <input type="submit" value="invia voto">
+    </form>
+    <a href="risultati.php">guarda risultati</a>
 </body>
+
 </html>
+
+<!-- - un input type date che rappresenta la data
+- un input type number che rappresenta il voto di una recensione (da 1 a 5)
+- un pulsante per inviare la form
+La form deve essere inviata alla pagina script.php tramite metodo POST.
+Inoltre in questa pagina è presente un link alla pagina risultati.php, che sarà spiegata successivamente. -->
